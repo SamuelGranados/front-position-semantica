@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="icons/bikcraft.svg" alt="logo-bikcraft">
-  <header>
+  <header class="header">
+      <img src="icons/bikcraft.svg" alt="logo-bikcraft">
+
     <nav>
       <ul class="menu">
         <li><a href="/">Sobre</a></li>
@@ -19,35 +20,37 @@
       </ul>
     </nav>
   </header>
-  <main class="conteudo">
-    <section class="introducao">
-      <h1>Bicicletas Feitas a Mão</h1> 
+
+  <main>
+    <article class="conteudo">
+    <div class="introducao" aria-labelledby="label-introducao">
+      <h1 id="label-introducao">Bicicletas Feitas a Mão</h1> 
       <p>A Nimbus Stark é a melhor Bikcraft ja criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
       <a class="botao" href="/">Ver Mais</a>
-    </section>
-    <section>
-      <img src="mg/bicicleta.jpg" alt="bicicleta">
-    </section>
-    <section class="subtitulo">
-      <h2>Vantagem Bikcraft</h2>
-    </section>
-    <section class="vantagens">
-      <aside class="vantagens-item">
+    </div>
+          <img src="mg/bicicleta.jpg" alt="bicicleta">
+  </article>
+
+  <article class="conteudo" aria-labelledby="label-vantagens">
+      <h2 class="subtitulo" id="label-vantagens">vantagens Bikcraft</h2>
+    <ul class="vantagens">
+      <li class="vantagens-item">
         <img src="icons/eletrica.svg" alt="">
         <h3>Motor Elétrico</h3>
         <p>Permite você viajar distâncias inimaginavéis com a sua bike.</p>
-      </aside>
-      <aside class="vantagens-item">
+      </li>
+      <li class="vantagens-item">
         <img src="icons/velocidade.svg" alt="">
         <h3>40 Km/h</h3>
         <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-      </aside>
-      <aside class="vantagens-item">
+      </li>
+      <li class="vantagens-item">
         <img src="icons/rastreador.svg" alt="">
         <h3>Rastreador</h3>
         <p>Rastreador e sistema de anti-furto com as melhores tecnologia do mercado para garantir o seu sossego.</p>
-      </aside>
-    </section>
+      </li>
+    </ul>
+  </article>
   </main>
   <footer class="footer">
     <p>Bikcraft. Alguns Direitos Reservador.</p>
