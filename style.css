@@ -88,6 +88,12 @@ ul{
   right: -30px;
 }
 
+.introducao-cover img{
+  object-fit: cover;
+  height: 100%;
+
+}
+
 .botao{
   background-color: #e21;
   color: #ffff;
@@ -142,4 +148,45 @@ ul{
   padding: 2.5rem;
   box-sizing: border-box;
 
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .header{
+    gap: 30px;
+  }
+  .menu li{
+    display: grid;
+  }
+  .introducao{
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before {
+    right: 0px;
+  }
+  .subtitulo{
+    font-size: 3rem;
+  }
+  body{
+    gap: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtitulo{
+    font-size: 2rem;
+  }
 }
