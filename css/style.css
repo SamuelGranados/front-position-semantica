@@ -1,11 +1,20 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   display: grid;
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
+  color: var(--texto);
 }
 
 img{
@@ -45,16 +54,16 @@ ul{
 }
 
 .menu a {
-  background: white;
+  background: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: black;
+  color: var(--texto);
   text-transform: uppercase;
-  border: 2px solid white;
+  border: 2px solid var(--fundo-2);
 }
 
 .menu a:hover{
-  border-color: #e21;
+  border-color: var(--cor-primaria);
 }
 
 .conteudo{
@@ -64,7 +73,7 @@ ul{
 }
 
 .introducao{
-  background-color: #ffff;
+  background-color: var(--fundo-2);
   padding: 2.5rem;
   text-align: right;
   position: relative;
@@ -82,7 +91,7 @@ ul{
   content: "";
   width: 60px;
   height: 4px;
-  background-color: #e21;
+  background-color: var(--cor-primaria);
   position: absolute;
   top: 30px;
   right: -30px;
@@ -95,15 +104,15 @@ ul{
 }
 
 .botao{
-  background-color: #e21;
-  color: #ffff;
+  background-color: var(--cor-primaria);
+  color: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .botao:hover{
-  background: #900;
+  background: var(--cor-primaria-escura);
 }
 
 .subtitulo{
@@ -117,7 +126,7 @@ ul{
 }
 
 .vantagens{
-  background-color: #ffff;
+  background-color: var(--fundo-2);
   padding: 40px;
 }
 
@@ -130,11 +139,11 @@ ul{
 }
 
 .vantagens-item:nth-child(odd){
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 
 .vantagens-item:hover{
-  border-left: 4px solid #e21;
+  border-left: 4px solid var(--cor-primaria);
 }
 
 .vantagens-item p{
@@ -142,7 +151,7 @@ ul{
 }
 
 .footer{
-  background-color: #ffff;
+  background-color: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 2.5rem;
