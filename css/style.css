@@ -4,6 +4,18 @@
   --fundo-1: #f7f7f7;
   --fundo-2: #ffffff;
   --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("./mg/onda-clara.svg"); 
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --fundo-1: #111111;
+  --fundo-2: #000000;
+  --texto: #ffffff;
+  --subtitulo: rgba(255, 255, 255, 0.2);
+  --onda: url("./mg/onda-escura.svg");
+}
 }
 
 body{
@@ -105,7 +117,7 @@ ul{
 
 .botao{
   background-color: var(--cor-primaria);
-  color: var(--fundo-2);
+  color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
@@ -118,11 +130,11 @@ ul{
 .subtitulo{
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   text-align: right;
   padding: 2.5rem;
   align-self: center;
-  background-image: url(web-final/img/onda.svg);
+  background-image: url("../mg/onda-clara.svg");
 }
 
 .vantagens{
